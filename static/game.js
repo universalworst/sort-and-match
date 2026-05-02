@@ -120,8 +120,8 @@ function handleClick(i) {
 
 // ── Correct match ────────────────────────────────────────────────────
 function handleCorrectMatch(firstIdx, secondIdx) {
-  const a = tiles[idxA];
-  const b = tiles[idxB];
+  const a = tiles[firstIdx];
+  const b = tiles[secondIdx];
 
   const groupSize = groups.find(g => g.name === a.group).members.length;
   const merged = {
@@ -147,10 +147,9 @@ function handleCorrectMatch(firstIdx, secondIdx) {
   render();
 
   // Animate the new front tile
-  const mergedPos = idxB > idxA ? hi - 1 : hi;
   const allTileEls = document.querySelectorAll(".tile");
   if (isComplete) {
-    animate(allTileEls[mergedPos], "complete-pulse", 700);
+    animate(allTileEls[insertAt], "complete-pulse", 700);
     setStatus(`Group complete: "${merged.group}"!`, "good");
     notifyBackend("group_complete", { group: merged.group });
 
@@ -161,7 +160,7 @@ function handleCorrectMatch(firstIdx, secondIdx) {
     }
 
   } else {
-    animate(allTileEls[mergedPos], "just-merged", 400);
+    animate(allTileEls[insertAt], "just-merged", 400);
     const remaining = groupSize - merged.members.length;
     setStatus(`Merged! ${remaining} more to go in this category.`, "good");
     notifyBackend("merge", { group: merged.group, members: merged.members });
