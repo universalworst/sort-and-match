@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sort &amp; Merge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Sort &amp; Merge</h1>
+    <p class="subtitle">Find buttons from the same group and click them to merge.</p>
+  </header>
+
+  <main>
+    <div id="win-banner" class="win-banner" hidden>
+      All groups complete — well done!
+    </div>
+    <div class="controls">
+      <button class="btn primary" onclick="newGame()">New game</button>
+    </div>
+    <div id="status" class="status">Loading game…</div>
+
+    <div id="board" class="board"></div>
+
+  </main>
+
+  <script src="/static/game.js"></script>
+
+</body>
+</html>

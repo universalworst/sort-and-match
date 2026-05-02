@@ -1,0 +1,263 @@
+/* ── Tokens ───────────────────────────────────────────────────────── */
+:root {
+  --bg:           #f7f4ee;
+  --surface:      #ffffff;
+  --border:       #ddd8ce;
+  --border-hover: #b8b0a4;
+  --text:         #211e18;
+  --muted:        #8a847a;
+
+  --sel-bg:       #eef3ff;
+  --sel-border:   #4a6fe8;
+  --sel-text:     #1a3db5;
+
+  --done-bg:      #f0faf4;
+  --done-border:  #52b87a;
+  --done-text:    #1a6038;
+
+  --err-bg:       #fff2f2;
+  --err-border:   #e05050;
+
+  --accent:       #b89a5c;
+
+  --radius:       10px;
+  --font-head:    'Playfair Display', Georgia, serif;
+  --font-body:    'Source Sans 3', sans-serif;
+}
+
+/* ── Reset ────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 20px 64px;
+}
+
+/* ── Header ───────────────────────────────────────────────────────── */
+header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+header h1 {
+  font-family: var(--font-head);
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ── Main container ───────────────────────────────────────────────── */
+main {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ── Status message ───────────────────────────────────────────────── */
+.status {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  min-height: 20px;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.status.good { color: var(--done-text); }
+.status.bad  { color: var(--err-border); }
+
+/* ── Win banner ───────────────────────────────────────────────────── */
+.win-banner {
+  background: var(--done-bg);
+  border: 1.5px solid var(--done-border);
+  border-radius: var(--radius);
+  color: var(--done-text);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: var(--font-head);
+  padding: 14px 28px;
+  text-align: center;
+}
+
+/* ── Board ────────────────────────────────────────────────────────── */
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ── Tiles ────────────────────────────────────────────────────────── */
+.tile {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+  max-width: 240px;
+  word-break: break-word;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.tile:hover:not(.done) {
+  background: #f0ece4;
+  border-color: var(--border-hover);
+}
+
+.tile:active:not(.done) {
+  transform: scale(0.97);
+}
+
+/* Selected */
+.tile.selected {
+  background: var(--sel-bg);
+  border-color: var(--sel-border);
+  color: var(--sel-text);
+}
+
+/* Fully merged group — locked */
+.tile.done {
+  background: var(--done-bg);
+  border-color: var(--done-border);
+  color: var(--done-text);
+  cursor: default;
+  font-style: italic;
+}
+
+.tile.done:hover {
+  background: var(--done-bg);
+  border-color: var(--done-border);
+}
+
+/* ── Animations ───────────────────────────────────────────────────── */
+
+/* Wrong match — shake */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-7px); }
+  40%       { transform: translateX(7px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
+
+.tile.wrong {
+  animation: shake 0.35s ease;
+  background: var(--err-bg) !important;
+  border-color: var(--err-border) !important;
+}
+
+/* Correct merge — warm flash */
+@keyframes merge-flash {
+  0%   { background: #fef0c0; border-color: var(--accent); }
+  100% { background: var(--surface); border-color: var(--border); }
+}
+
+.tile.just-merged {
+  animation: merge-flash 0.2s ease-out forwards;
+}
+
+/* Group complete — green pulse ring */
+@keyframes complete-pulse {
+  0%   { box-shadow: 0 0 0 0   rgba(82, 184, 122, 0.55); }
+  100% { box-shadow: 0 0 0 10px rgba(82, 184, 122, 0); }
+}
+
+.tile.complete-pulse {
+  animation: complete-pulse 0.6s ease-out forwards;
+}
+
+/* ── Controls ─────────────────────────────────────────────────────── */
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 22px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn:hover {
+  background: #ece8e0;
+  border-color: var(--border-hover);
+}
+
+.btn.primary {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+.btn.primary:hover {
+  background: #3a322a;
+}
+
+/* ── Loading state ────────────────────────────────────────────────── */
+.loading-text {
+  color: var(--muted);
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* ── Error state ──────────────────────────────────────────────────── */
+.error-text {
+  color: var(--err-border);
+  font-size: 14px;
+}
+
+.tile[data-tooltip] {
+  position: relative;
+}
+
+.tile[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: var(--bg);
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+}
