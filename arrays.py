@@ -209,15 +209,15 @@ class Groups:
         "Red Dwarf", "The Facts of Life", "Seinfeld", "Family Ties", "Golden Girls"
         ]
     
-    EMPIRES = ["Rome", "Akkad", "Egypt", "Persia", "Assyria",
-        "Scythian", "Lydia", "Carthage", "Phoenecian", "Mongol",
-        "Mughal", "Holy Roman Empire", "Ottoman", "Umayyad", "Mayan",
-        "Olmec", "Aztec", "Songhai", "Mali", "Austria-Hungary",
-        "Burgundy", "Angevin", "Golden Horde", "Macedonia", "Parthia",
-        "Seleucid", "Mamluk", "Hittite", "Kushan", "Gupta",
-        "Maurya", "Poland-Lithuania", "Soviet Union", "Venetian", "Babylonian",
-        "Carolingian", "Bulgaria", "Elam", "Inca", "Qin",
-        "Median", "Sasanian", "Seljuk", "Toltec", "Wari"
+    DYNASTIES = ["Han", "Xia", "Ptolomeic", "Stuart", "Habsberg",
+        "Bourbon", "Alaouite", "Julio-Claudian", "Tudor", "Theodosian",
+        "Valois", "Flavian", "Ottoman", "Umayyad", "Severan",
+        "Ottoman", "Atec", "Mithridatic", "Medici", "Hardrata",
+        "Oyoko Abohyen", "Angevin", "Plantagenet", "Saud", "Hohenzollern",
+        "Seleucid", "York", "Lancaster", "Moshesh", "Savoy",
+        "Kenga", "Romanov", "Normandy", "Rurik", "Achaemanid",
+        "Carolingian", "Windsor", "Chakri", "Eurypontid", "Qin",
+        "Kim", "Capetian", "Song", "Koshitsu", "Hova"
         ]
     
     CHILDRENS_BOOKS = ["Harold and the Purple Crayon", "Don't Let the Pigeon Drive the Bus", "Last Stop on Market Street", "Blueberries for Sal", "Goodnight Moon",
@@ -309,7 +309,7 @@ class Groups:
             {"name": "Electronics",     "members": cls.ELECTRONICS},
             {"name": "Fantasy Creatures","members": cls.FANTASY_CREATURES},
             {"name": "Fish",            "members": cls.FISH},
-            {"name": "Former Empires",  "members": cls.EMPIRES},
+            {"name": "Dynasties",  "members": cls.DYNASTIES},
             {"name": "Geographic Features", "members": cls.GEOGRAPHY},
             {"name": "Gods & Goddesses", "members": cls.GODS},
             {"name": "Languages",       "members": cls.LANGUAGES},
