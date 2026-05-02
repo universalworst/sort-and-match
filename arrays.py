@@ -92,7 +92,7 @@ class Groups:
         "Tuna", "Red snapper", "Trout", "Haddock", "Walleye",
         "Bass", "Catfish", "Swordfish", "Neon tetra", "Guppy",
         "Anchovy", "Mackerel", "Hammerhead shark", "Bream", "Blue tang",
-        "Perch", "Halibut", "Pike", "Marlin", "Flounder",
+        "Perch", "Halibut", "Bullhead", "Marlin", "Flounder",
         "Grouper", "Mahi mahi", "Alewife", "Arctic char", "Tilapia",
         "Herring", "Goby", "Angelfish", "Barracuda", "Piranha",
         "Pollock", "Golden dorado", "Crappie", "Ayu", "Arowana",
@@ -287,7 +287,7 @@ class Groups:
         ]
     
     MELEE_WEAPONS = ["Knife", "Dagger", "Scimitar", "Rapier", "Epee",
-        "Pike", "Sword", "Katana", "Mace", "Club", 
+        "", "Sword", "Katana", "Mace", "Club", 
         "Spear", "Polearm", "Cudgel", "Baton", "Blackjack",
         "Axe", "Battleaxe", "Greatsword", "Halberd", "Flail",
         "Tomahawk", "Billhook", "Saber", "Brass knuckles", "Gladius",
@@ -309,7 +309,7 @@ class Groups:
             {"name": "Electronics",     "members": cls.ELECTRONICS},
             {"name": "Fantasy Creatures","members": cls.FANTASY_CREATURES},
             {"name": "Fish",            "members": cls.FISH},
-            {"name": "Dynasties",  "members": cls.DYNASTIES},
+            {"name": "Dynasties",       "members": cls.DYNASTIES},
             {"name": "Geographic Features", "members": cls.GEOGRAPHY},
             {"name": "Gods & Goddesses", "members": cls.GODS},
             {"name": "Languages",       "members": cls.LANGUAGES},
