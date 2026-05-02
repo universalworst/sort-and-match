@@ -119,7 +119,7 @@ function handleClick(i) {
 }
 
 // ── Correct match ────────────────────────────────────────────────────
-function handleCorrectMatch(idxA, idxB) {
+function handleCorrectMatch(firstIdx, secondIdx) {
   const a = tiles[idxA];
   const b = tiles[idxB];
 
@@ -134,11 +134,14 @@ function handleCorrectMatch(idxA, idxB) {
   const isComplete = merged.members.length === groupSize;
   if (isComplete) merged.done = true;
 
-  const hi = Math.max(idxA, idxB);
-  const lo = Math.min(idxA, idxB);
+  const hi = Math.max(firstIdx, secondIdx);
+  const lo = Math.min(firstIdx, secondIdx);
   tiles.splice(hi, 1);
   tiles.splice(lo, 1);
-  tiles.splice(idxB > idxA ? hi - 1 : hi, 0, merged);
+  let insertAt = secondIdx;
+  if (secondIdx > firstIdx) insertAt = secondIdx - 1;
+
+  tiles.splice(insertAt, 0, merged);
   selectedIndex = null;
 
   render();
