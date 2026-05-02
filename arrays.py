@@ -210,7 +210,7 @@ class Groups:
         ]
     
     EMPIRES = ["Rome", "Akkad", "Egypt", "Persia", "Assyria",
-        "Scythian", "Lydia", "Carthage", "Phonecian", "Mongol",
+        "Scythian", "Lydia", "Carthage", "Phoenecian", "Mongol",
         "Mughal", "Holy Roman Empire", "Ottoman", "Umayyad", "Mayan",
         "Olmec", "Aztec", "Songhai", "Mali", "Austria-Hungary",
         "Burgundy", "Angevin", "Golden Horde", "Macedonia", "Parthia",
@@ -250,7 +250,7 @@ class Groups:
         "Irrawaddy", "Rhine", "Thames", "Seine", "Salween",
         "Orinoco", "Rio de la Plata", "Magdalena", "Sepik", "Tocantins",
         "Mamberamo", "Murray", "Colorado", "Yarra", "Hudson",
-        "Ohio", "Brisbane", "Potomac", "Ottawa", "Missouri"
+        "Ohio", "Brisbane", "Potomac", "Platte", "Missouri"
         ]
     
     GEOGRAPHY = ["River", "Plateau", "Mountain", "Strait", "Isthmus",
@@ -262,6 +262,39 @@ class Groups:
         "Swamp", "Volcano", "Delta", "Fjord", "Marsh",
         "Hill", "Peak", "Rain forest", "Creek", "Continent",
         "Cliff", "Prairie", "Plain", "Coast", "Beach"
+        ]
+    
+    GODS = ["Odin", "Loki", "Thor", "Freyr", "Idun",
+        "Zeus", "Cupid", "Hades", "Saturn", "Woden",
+        "Pan", "Ishtar", "Dagon", "Huitzilopochtli", "Anubis",
+        "Iris", "Leto", "Apollo", "Xipe Totec", "Quetzalcoatl",
+        "Inti", "Pachamama", "Apu", "Marduk", "Enlil",
+        "Hathor", "Amun", "Aten", "Anansi", "Inanna",
+        "Aphrodite", "Athena", "Jove", "Morrigan", "Demeter",
+        "Rhiannon", "Enki", "Poseidon", "Hecate", "Gaia",
+        "Isis", "Aristaeus", "Dionysus", "Selene", "Lir"
+        ]
+    
+    TRANSPORTATION = ["Wagon", "Bicycle", "Automobile", "Bus", "Train",
+        "Airplane", "Helicopter", "Scooter", "Rickshaw", "Moped",
+        "Rollerskates", "Skateboard", "Unicycle", "Horse", "Camel",
+        "Submarine", "Oceanliner", "Canoe", "Kayak", "Biplane",
+        "Subway", "Cable car", "Trolley", "Mule", "Motorcycle",
+        "Stagecoach", "Semi truck", "Van", "Monorail", "Paddleboat",
+        "Raft", "Jetski", "Taxi", "Hanglider", "Hot air balloon",
+        "Tank", "Ferry", "Bobsled", "Dirigible", "Dogsled",
+        "Chariot", "Tractor", "Gondola", "Limousine", "Litter"
+        ]
+    
+    MELEE_WEAPONS = ["Knife", "Dagger", "Scimitar", "Rapier", "Epee",
+        "Pike", "Sword", "Katana", "Mace", "Club", 
+        "Spear", "Polearm", "Cudgel", "Baton", "Blackjack",
+        "Axe", "Battleaxe", "Greatsword", "Halberd", "Flail",
+        "Tomahawk", "Billhook", "Saber", "Brass knuckles", "Gladius",
+        "Warhammer", "Lance", "Cutlass", "Bo staff", "Nunchucks",
+        "Poleaxe", "Quarterstaff", "Dirk", "Claymore", "Shillelagh",
+        "Wind-and-fire wheels", "Japanese war fan", "Pata", "Javelin", "Bolo",
+        "Machete", "Morning star", "Hatchet", "Trident", "Bullwhip"
         ]
     
 
@@ -278,9 +311,12 @@ class Groups:
             {"name": "Fish",            "members": cls.FISH},
             {"name": "Former Empires",  "members": cls.EMPIRES},
             {"name": "Geographic Features", "members": cls.GEOGRAPHY},
+            {"name": "Gods & Goddesses", "members": cls.GODS},
             {"name": "Languages",       "members": cls.LANGUAGES},
             {"name": "Latin Roots",     "members": cls.LATIN_ROOTS},
+            {"name": "Melee Weapons",   "members": cls.MELEE_WEAPONS},
             {"name": "Metals",          "members": cls.METALS},
+            {"name": "Modes of Transportation", "members": cls.TRANSPORTATION},
             {"name": "Painters",        "members": cls.PAINTERS},
             {"name": "Philosophers",    "members": cls.PHILOSOPHERS},
             {"name": "Primates",        "members": cls.PRIMATES},
