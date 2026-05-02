@@ -137,16 +137,17 @@ function handleCorrectMatch(idxA, idxB) {
   const hi = Math.max(idxA, idxB);
   const lo = Math.min(idxA, idxB);
   tiles.splice(hi, 1);
-  tiles.splice(lo, 1, merged);
+  tiles.splice(lo, 1);
+  tiles.splice(idxB > idxA ? hi - 1 : hi, 0, merged);
   selectedIndex = null;
 
   render();
 
   // Animate the new front tile
+  const mergedPos = idxB > idxA ? hi - 1 : hi;
   const allTileEls = document.querySelectorAll(".tile");
-
   if (isComplete) {
-    animate(allTileEls[lo], "complete-pulse", 700);
+    animate(allTileEls[mergedPos], "complete-pulse", 700);
     setStatus(`Group complete: "${merged.group}"!`, "good");
     notifyBackend("group_complete", { group: merged.group });
 
@@ -157,7 +158,7 @@ function handleCorrectMatch(idxA, idxB) {
     }
 
   } else {
-    animate(allTileEls[lo], "just-merged", 400);
+    animate(allTileEls[mergedPos], "just-merged", 400);
     const remaining = groupSize - merged.members.length;
     setStatus(`Merged! ${remaining} more to go in this category.`, "good");
     notifyBackend("merge", { group: merged.group, members: merged.members });
@@ -175,7 +176,7 @@ function handleWrongMatch(idxA, idxB) {
   animate(allTiles[idxA], "wrong", 400);
   animate(allTiles[idxB], "wrong", 400);
 
-  setStatus("Different groups!", "bad");
+  setStatus("These are not from the same group!", "bad");
 }
 
 // ── Hint ─────────────────────────────────────────────────────────────
@@ -183,7 +184,7 @@ function showHint() {
   const incomplete = tiles.filter(t => !t.done);
   if (!incomplete.length) return;
   const pick = incomplete[Math.floor(Math.random() * incomplete.length)];
-  setStatus(`Hint: look for another "${pick.group}" button!`, "");
+  setStatus(`Hint: Look for another "${pick.group}" button!`, "");
 }
 
 // ── Backend communication ─────────────────────────────────────────────
