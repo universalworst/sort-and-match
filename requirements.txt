@@ -1,2 +1,2 @@
-flask==python-3.11.0
+flask
 gunicorn
