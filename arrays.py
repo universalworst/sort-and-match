@@ -66,7 +66,7 @@ class Groups:
         "Bambi", "Encanto", "Finding Nemo", "The Aristocats", "A Goofy Movie"
         ]
     
-    COLORS = ["Almond", "Yellow", "Apricot", "Olive green", "Forest green",
+    COLORS = ["Almond", "Amethyst", "Apricot", "Olive green", "Forest green",
         "Wild strawberry", "Cadet blue", "Razzmatazz", "Mauvelous", "Raw sienna",
         "Desert sand", "Tan", "Sepia", "Timberwolf", "Robin's egg blue",
         "Periwinkle", "Cornflower", "Indigo", "Aquamarine", "Cerulean",
@@ -101,7 +101,7 @@ class Groups:
 
     WORLD_CAPITALS = ["Cairo", "Lisbon", "Ankara", "New Delhi", "Nassau", 
         "Havana", "Bangkok", "Helsinki", "Riga", "Seoul",
-        "Lima", "Montevideo", "Ottawa", "Lagos", "Canberra",
+        "Lima", "Montevideo", "London", "Lagos", "Canberra",
         "Baghdad", "Islamabad", "Tehran", "Hanoi", "Dublin",
         "Wellington", "Stockholm", "Prague", "Reykjavik", "Addis Ababa",
         "Mogadishu", "Santo Domingo", "Port-au-Prince", "Mexico City", "Tunis",
@@ -317,7 +317,7 @@ class Groups:
         "Glaze", "Terracotta", "Textile", "Encaustic", "Paperboard",
         "Vellum", "Parchment", "Card stock", "Colored pencil", "Watercolor pencil",
         "Wax", "Ice", "Glass", "Metal", "Granite"
-        ],
+        ]
 
     UNITS = ["Meter", "Second", "Kilogram", "Parsec", "Hour",
         "Lumen", "Ampere", "Kelvin", "Celsius", "Mole",
