@@ -319,7 +319,16 @@ class Groups:
         "Wax", "Ice", "Glass", "Metal", "Granite"
         ],
 
-
+    UNITS = ["Meter", "Second", "Kilogram", "Parsec", "Hour",
+        "Lumen", "Ampere", "Kelvin", "Celsius", "Mole",
+        "Newton", "Candela", "Gallon", "Ton", "Mile",
+        "Year", "Inch", "Pascal", "Liter", "Hertz",
+        "Acre", "Joule", "Watt", "Atmosphere", "Radian",
+        "Weber", "Volt", "Tesla", "Farad", "Ohm",
+        "Henry", "Siemens", "Lux", "Becquerel", "Coulomb",
+        "Foot", "Centimeter", "Kilometer", "Katal", "Sievert",
+        "Dyne", "Erg", "Rayl", "Barye", "Stilb"
+        ]
     
 
     @classmethod
@@ -352,6 +361,7 @@ class Groups:
             {"name": "Rodents",         "members": cls.RODENTS},
             {"name": "American Singers","members": cls.SINGERS},
             {"name": "Sitcoms",         "members": cls.SITCOMS},
+            {"name": "Units of Measurement","members": cls.UNITS},
             {"name": "Video Games",     "members": cls.VIDEO_GAMES},
             {"name": "World Capitals",  "members": cls.WORLD_CAPITALS}
         ]
