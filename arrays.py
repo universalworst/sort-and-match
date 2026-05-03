@@ -67,11 +67,11 @@ class Groups:
         ]
     
     COLORS = ["Almond", "Yellow", "Apricot", "Olive green", "Forest green",
-        "Wild strawberry", "Salmon", "Razzmatazz", "Mauvelous", "Raw sienna",
+        "Wild strawberry", "Cadet blue", "Razzmatazz", "Mauvelous", "Raw sienna",
         "Desert sand", "Tan", "Sepia", "Timberwolf", "Robin's egg blue",
         "Periwinkle", "Cornflower", "Indigo", "Aquamarine", "Cerulean",
         "Peach", "Spring green", "Red violet", "Sunset orange", "Mahogany",
-        "Atomic tangerine", "Banana Mania", "Violet", "Goldenrod", "Dandelion",
+        "Atomic tangerine", "Turquoise blue", "Violet", "Goldenrod", "Dandelion",
         "Lemon yellow", "Inchworm", "Canary", "Electric lime", "Asparagus",
         "Fern", "Denim", "Blue Bell", "Purple mountains' majesty", "Thistle",
         "Plum", "Magenta", "Black", "Cotton candy", "Orchid"
@@ -88,7 +88,7 @@ class Groups:
         "Radiator", "Sewing machine", "USB drive", "Digital watch", "Digital camera"
         ]
     
-    FISH = ["Clownfish", "Bluegill", "Salmon", "Cod", "Sturgeon",
+    FISH = ["Clownfish", "Bluegill", "Lingcod", "Cod", "Sturgeon",
         "Tuna", "Red snapper", "Trout", "Haddock", "Walleye",
         "Bass", "Catfish", "Swordfish", "Neon tetra", "Guppy",
         "Anchovy", "Mackerel", "Hammerhead shark", "Bream", "Blue tang",
@@ -126,9 +126,9 @@ class Groups:
         "Kangaroo rat", "Gopher", "Capybara", "Muskrat", "Lemming",
         "Prairie dog", "Porcupine", "Groundhog", "Woodchuck", "Marmot",
         "Spring hare", "Norwegian rat", "Jerboa", "Brush-tail mouse", "Pacarana",
-        "Hutia", "Flying squirrel", "Cavy", "Mara", "Viscacha",
-        "Degu", "Gundi", "Deer mouse", "Pygmy mouse", "Pack rat",
-        "Pericote", "Pilorie", "Colilargo", "Conyrat", "Ammodile",
+        "Tuco-tuco", "Flying squirrel", "Cavy", "Scaly-tail squirrel", "Viscacha",
+        "Water rat", "Gundi", "Deer mouse", "Pygmy mouse", "Pack rat",
+        "Pericote", "Hutia", "Colilargo", "Conyrat", "Ammodile",
         "Jird", "Tateril", "Dormouse", "Mountain beaver", "Octodont"
         ]
 
@@ -143,9 +143,9 @@ class Groups:
         "Grand", "Inter", "Later", "Leg", "Liber"
         ]
     
-    METALS = ["Gold", "Tin", "Lead", "Aluminum", "Copper",
-        "Tungsten", "Mercury", "Bronze", "Brass", "Iron", 
-        "Chromium", "Nickel", "Silver", "Electrum", "Titanium",
+    METALS = ["Plutonium", "Tin", "Lead", "Aluminum", "Lithium",
+        "Tungsten", "Uranium", "Bronze", "Brass", "Iron", 
+        "Chromium", "Nickel", "Chrome", "Electrum", "Titanium",
         "Zinc", "Steel", "Magnesium", "Platinum", "Zirconium",
         "Cobalt", "Manganese", "Pewter", "Billon", "Cast iron",
         "Solder", "Stainless steel", "Sterling silver", "Amalgam", "Antimony",
@@ -287,7 +287,7 @@ class Groups:
         ]
     
     MELEE_WEAPONS = ["Knife", "Dagger", "Scimitar", "Rapier", "Epee",
-        "", "Sword", "Katana", "Mace", "Club", 
+        "Cat o' Nine Tails", "Sword", "Katana", "Mace", "Club", 
         "Spear", "Polearm", "Cudgel", "Baton", "Blackjack",
         "Axe", "Battleaxe", "Greatsword", "Halberd", "Flail",
         "Tomahawk", "Billhook", "Saber", "Brass knuckles", "Gladius",
@@ -297,26 +297,52 @@ class Groups:
         "Machete", "Morning star", "Hatchet", "Trident", "Bullwhip"
         ]
     
+    CURSED_TECHNIQUES = ["Mythical Beast Amber", "Reverse Cursed Technique", "Copy", "Straw Doll Technique", "Boogie Woogie",
+        "Black Flash", "Divergent Fist", "Inverse", "Ten Shadows", "Love Rendezvous", "Cursed Spirit Manipulation", 
+        "Six Eyes", "Limitless", "Blood Manipulation", "Antigravity System", "Technique Extinguishment", 
+        "Unblockable Drumming Beat", "Puppet Manipulation", "Tool Manipulation", "Construction", "Simple Domain",
+        "Heart Catch", "Cloning Technique", "Ratio Technique", "Auspicious Beast Summoning", "Seance Technique",
+        "Cursed Speech", "Idle Transfiguration", "Solo Forbidden Area", "Disaster Flames", "Brain Transplant",
+        "Shrine", "Blazing Courage", "Star Rage", "Projection Sorcery", "Cursed Energy Discharge",
+        "Cursed Corpse Manipulation", "Immortality", "Judgeman", "Comedian", "Contractual Re-Creation",
+        "Explosive Flesh", "Prayer Song", "Miracles", "Black Bird Manipulation", "Ice Formation"
+        ]
+    
+    ART_MATERIALS = ["Oil paint", "Acrylics", "Clay", "Stone", "Watercolors",
+        "Ink", "Dye", "Chalk", "Pastels", "Marble",
+        "Graphite", "Charcoal", "Wood", "Ceramic", "Bronze",
+        "Fresco", "Fluid acrylics", "Markers", "Gouache", "Paper",
+        "Canvas", "Wood panel", "Pottery wheel", "Kiln", "Chisel",
+        "Paintbrush", "Palette knife", "Crayons", "Plaster", "Papier-mache",
+        "Glaze", "Terracotta", "Textile", "Encaustic", "Paperboard",
+        "Vellum", "Parchment", "Card stock", "Colored pencil", "Watercolor pencil",
+        "Wax", "Ice", "Glass", "Metal", "Granite"
+        ],
+
+
+    
 
     @classmethod
     def all(cls):
         return [
             {"name": "Anime",           "members": cls.ANIME},
+            {"name": "Art Materials",   "members": cls.ART_MATERIALS},
             {"name": "Disney Movies",   "members": cls.DISNEY},
-            {"name": "Children's Books", "members": cls.CHILDRENS_BOOKS},
+            {"name": "Children's Books","members": cls.CHILDRENS_BOOKS},
             {"name": "Crayon Colors",   "members": cls.COLORS},
             {"name": "Crops",           "members": cls.CROPS},
             {"name": "Electronics",     "members": cls.ELECTRONICS},
             {"name": "Fantasy Creatures","members": cls.FANTASY_CREATURES},
             {"name": "Fish",            "members": cls.FISH},
             {"name": "Dynasties",       "members": cls.DYNASTIES},
-            {"name": "Geographic Features", "members": cls.GEOGRAPHY},
-            {"name": "Gods & Goddesses", "members": cls.GODS},
+            {"name": "Geographic Features","members": cls.GEOGRAPHY},
+            {"name": "Gods & Goddesses","members": cls.GODS},
+            {"name": "Cursed Techniques","members": cls.CURSED_TECHNIQUES},
             {"name": "Languages",       "members": cls.LANGUAGES},
             {"name": "Latin Roots",     "members": cls.LATIN_ROOTS},
             {"name": "Melee Weapons",   "members": cls.MELEE_WEAPONS},
             {"name": "Metals",          "members": cls.METALS},
-            {"name": "Modes of Transportation", "members": cls.TRANSPORTATION},
+            {"name": "Modes of Transportation","members": cls.TRANSPORTATION},
             {"name": "Painters",        "members": cls.PAINTERS},
             {"name": "Philosophers",    "members": cls.PHILOSOPHERS},
             {"name": "Primates",        "members": cls.PRIMATES},
