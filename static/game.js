@@ -66,13 +66,15 @@ function render() {
     const preview = tile.members.slice(0, 2).join(", ");
     const hasMore = tile.members.length > 2;
     const classes = ["tile"];
+    const length = tile.members.length
+
     if (tile.done)          classes.push("done");
     if (selectedIndex === i) classes.push("selected");
     el.className = classes.join(" ");
 
     el.textContent = tile.members.join(", ");
     el.dataset.index = i;
-    el.textContent = hasMore ? preview + "…" : allMembers;
+    el.textContent = hasMore ? preview + "… " + "[" + length + "]": allMembers;
     el.title = allMembers; // shows full list on hover as a tooltip
 
     if (!tile.done) {
@@ -116,6 +118,12 @@ function handleClick(i) {
   }
 
   selectedIndex = null;
+}
+
+function deselectTile() {
+  selectedIndex = null;
+  render();
+  return
 }
 
 // ── Correct match ────────────────────────────────────────────────────
@@ -237,6 +245,13 @@ function shuffle(arr) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
 }
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    console.log('User pressed the Escape key!');
+    deselectTile();
+  }
+});
 
 // ── Fallback data ─────────────────────────────────────────────────────
 // Used when the Flask backend isn't running yet.

@@ -12,12 +12,12 @@ class Groups:
         ]
     
     REVOLUTIONARIES = ["Vladimir Lenin", "Che Guevera", "Fidel Castro", "Emiliano Zapata", "Maximilien Robespierre",
-        "Mahatma Gandhi", "Mao Zedong", "Toussaint L'Ouverture", "Leon Trotsky", "Simon Bolivar",
+        "Mahatma Gandhi", "Mao Zedong", "Toussaint L'Ouverture", "Leon Trotsky", "Simón Bolívar",
         "Georges Danton", "Nadezhda Krupskaya", "Nelson Mandela", "Patrick Pearse", "Michael Collins",
         "Rosa Luxembourg", "Giuseppe Garibaldi", "Julius Martov", "Bobby Sands", "Pancho Villa",
         "Gavrilo Princip", "Marquis de Lafayette", "Samuel Adams", "Patrick Henry", "William Wallace",
         "Thomas Paine", "Thaddeus Kosciuszko", "Robert Blum", "Auguste Blanqui", "Jaroslaw Dabrowski",
-        "Louis Delescluze", "Bernardo O'Higgins", "Jose de San Martin", "Antonio Jose de Sucre", "Francisco de Miranda",
+        "Louis Delescluze", "Bernardo O'Higgins", "José de San Martin", "Antonio José de Sucre", "Francisco de Miranda",
         "Giuseppe Mazzini", "Louis de Saint Just", "Comte de Mirabeau", "Viktor Chernov", "Maria Spiridonova",
         "Malcolm X", "John Brown", "Karl Liebknecht", "Thomas Sankara", "Steve Biko"
         ]
@@ -329,6 +329,12 @@ class Groups:
         "Foot", "Centimeter", "Kilometer", "Katal", "Sievert",
         "Dyne", "Erg", "Rayl", "Barye", "Stilb"
         ]
+    
+    DANCES = [ "Tango", "Jig", "Disco", "Charleston", "Twist",
+        "Hornpipe", "Reel", "Slide", "Cha cha", "Quadrille",
+         "Waltz", "Mambo", "Salsa", "Dougie", "Foxtrot",
+         "Macarena", ""
+         ]
     
 
     @classmethod
