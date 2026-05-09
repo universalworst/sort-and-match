@@ -333,15 +333,67 @@ class Groups:
     DANCES = [ "Tango", "Jig", "Disco", "Charleston", "Twist",
         "Hornpipe", "Reel", "Slide", "Cha cha", "Quadrille",
          "Waltz", "Mambo", "Salsa", "Dougie", "Foxtrot",
-         "Macarena", ""
+         "Macarena", "Robot", "Cabbage Patch", "Break", "Ballet",
+         "Lyrical", "Bachata", "Jive", "Cossack", "Buyo",
+         "La Bamba", "Boogie", "Hustle", "Rumba", "Pasodoble",
+         "Line", "Square", "Two-step", "Jitterbug", "Electric boogaloo",
+         "Harlem shake", "Furiant", "Morris", "Konpa", "Manipuri",
+         "Pandanggo", "Limbo", "Calypso", "Hula", "Lindy Hop"
          ]
     
+    GOVERNMENTS = ["Constitutional monarchy", "Absolute Monarchy", "Dual monarchy", "Duarchy", "Oligarchy", "Plutocracy",
+        "Republic", "Military junta", "Socialist republic", "Communist state",
+        "Parliamentary democracy", "Chiefdom", "Theocracy", "Federation", "Unitary system",
+        "Empire", "Confederation", "Presidential democracy", "Participatory democracy", "Feudalism",
+        "Meritocracy", "Gerontocracy", "Tribalism", "Anarchy", "Colony"
+        "Anarcho-syndicalism", "Authoritarianism", "Syndicalism", "Matriarchy", "Socialist democracy",
+        "Liberal democracy", "Demarchy", "Technocracy", "Corporatocracy", "Stratocracy",
+        "Fascism", "Merchant republic", "People's republic", "City-state", "Global state",
+        "Commune", "Slavocracy", "Ochlocracy", "Apartheid state", "Geniocracy"]
+    
+    IDEOLOGIES = ["Nihilism", "Pacifism", "Liberalism", "Conservatism", "Marxism",
+        "Materialism", "Idealism", "Rationalism", "Romanticism", "Humanism",
+        "Racism", "Environmentalism", "Social darwinism", "Globalism", "Protectionism",
+        "Individualism", "Feminism", "Multiculturalism", "Caitalism", "Nationalism",
+        "Collectivism", "Consumerism", "Secularism"
+        ]
+    
+    ANIMAL_SOUNDS = ["Bow wow", "Meow", "Nyan", "Woof", "Yip",
+        "Cheep", "Tweet", "Quack", "Oink", "Squeak",
+        "Neigh", "Hee-haw", "Eeyore", "Cluck", "Cockadoodle-doo",
+        "Gobble", "Baa", "Hoot", "Honk", "Oo-oo ee-ee ah-ah",
+        "Roar", "Hiss", "Moo", "Ribbit", "Croak",
+        "Poo-tee-weet", "Yiff", "Howl", "Crow", "Chirp"]
+    
+    ASIAN_COUNTRIES = ["China", "Japan", "Saudi Arabia", "Jordan", "Oman",
+        "Sri Lanka", "Cambodia", "Thailand", "Brunei", "Singapore",
+        "Vietnam", "Taiwan", "Kazakhstan", "Mongolia", "Kyrgyzstan",
+        "Afghanistan", "Iran", "Iraq", "Philippines", "Indonesia",
+        "India", "Pakistan", "Bangladesh", "Yemen", "Qatar",
+        "Laos", "Uzbekistan", "Azerbaijan", "Bhutan", "South Korea",
+        "Lebanon", "Syria", "Myanmar", "Malaysia", "North Korea",
+        "Armenia", "Turkey", "Russia", "Turkmenistan", "Tajikistan",
+        "Nepal", "Timor-Leste", "Maldives", "Georgia", "Kuwait"
+        ]
+    
+    MENTORS = ["Obi-Wan Kenobi", "Gandalf", "Albus Dumbledore", "Satoru Gojo", "Mr. Miyagi",
+        "Master Splinter", "Coach Bombay", "Doc Hudson", "Morpheus", "Rafiki",
+        "Toriel", "Yoda", "All Might", "Master Roshi", "Izumi Curtis",
+        "Kakashi Hakate", "Arataka Reigen", "Maester Aemon", "Jaqen H'ghar", "Haymitch Abernathy",
+        "Professor X", "Doc Brown", "Merlin", "Kelsier", "Mrs. Whatsit", "Patriarch Subodhi",
+        "Chiron", "Mary Poppins", "Kala", "Philoctetes", "Jiminy Cricket",
+        "Grandmother Willow", "John Keating", "Alfred Pennyworth", "Tony Stark", "Mickey Goldmill",
+        "Sean Maguire", "Biscuit Kreuger", "Levi Ackerman", "Koro-sensei", "Silvers Rayleigh",
+        "Kisuke Urahara", "Granny Weatherwax", "Uncle Ben", "Stick", "Kilowog"
+        ]
 
     @classmethod
     def all(cls):
         return [
             {"name": "Anime",           "members": cls.ANIME},
             {"name": "Art Materials",   "members": cls.ART_MATERIALS},
+            {"name": "Asian Countries", "members": cls.ASIAN_COUNTRIES},
+            {"name": "Dances",          "members": cls.DANCES},
             {"name": "Disney Movies",   "members": cls.DISNEY},
             {"name": "Children's Books","members": cls.CHILDRENS_BOOKS},
             {"name": "Crayon Colors",   "members": cls.COLORS},
@@ -352,10 +404,12 @@ class Groups:
             {"name": "Dynasties",       "members": cls.DYNASTIES},
             {"name": "Geographic Features","members": cls.GEOGRAPHY},
             {"name": "Gods & Goddesses","members": cls.GODS},
+            {"name": "Governmental Systems", "members": cls.GOVERNMENTS},
             {"name": "Cursed Techniques","members": cls.CURSED_TECHNIQUES},
             {"name": "Languages",       "members": cls.LANGUAGES},
             {"name": "Latin Roots",     "members": cls.LATIN_ROOTS},
             {"name": "Melee Weapons",   "members": cls.MELEE_WEAPONS},
+            {"name": "Mentor Characters", "members": cls.MENTORS},
             {"name": "Metals",          "members": cls.METALS},
             {"name": "Modes of Transportation","members": cls.TRANSPORTATION},
             {"name": "Painters",        "members": cls.PAINTERS},
@@ -367,6 +421,7 @@ class Groups:
             {"name": "Rodents",         "members": cls.RODENTS},
             {"name": "American Singers","members": cls.SINGERS},
             {"name": "Sitcoms",         "members": cls.SITCOMS},
+            {"name": "Systems of Governement", "members": cls.GOVERNMENTS},
             {"name": "Units of Measurement","members": cls.UNITS},
             {"name": "Video Games",     "members": cls.VIDEO_GAMES},
             {"name": "World Capitals",  "members": cls.WORLD_CAPITALS}
