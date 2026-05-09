@@ -386,10 +386,31 @@ class Groups:
         "Sean Maguire", "Biscuit Kreuger", "Levi Ackerman", "Koro-sensei", "Silvers Rayleigh",
         "Kisuke Urahara", "Granny Weatherwax", "Uncle Ben", "Stick", "Kilowog"
         ]
+    TOYS = ["Lincoln Logs", "Barbie", "Lego", "Pogo stick", "Rocking horse",
+        "Yo-yo", "Tinker toys", "Magnetiles", "Kinetic sand", "Teddy bear",
+        "Easy-Bake Oven", "Play kitchen", "Bratz", "Polly Pocket", "Gumby",
+        "Shrinky Dinks", "American Girl Doll", "Slinky", "Hot Wheels", "Magic 8 Ball",
+        "Mr. Potato Head", "Play-Doh", "Barrel of monkeys", "Ball", "Etch-a-Sketch",
+        "Lite-Brite", "Water gun", "NERF gun", "Silly Putty", "Furby",
+        "Raggedy Anne", "Hula Hoop", "Playmobil", "Rubik's cube", "Skip-it",
+        "Tickle Me Elmo", "Radio Flyer Wagon", "View Master", "Army men", "Tonka Truck",
+        "Toy train", "Rock-a-Stack", "Chatter Telephone", "Rock 'em Sock 'em Robots", "Simon"
+        ]
+    
+    GAMES = ["Go Fish", "Poker", "Gin Rummy", "Crazy Eights", "Old Maid",
+        "Uno", "Hearts", "Spades", "Solitaire", "Candy Land",
+        "Majong", "Sorry!", "Settlers of Catan", "Monopoly", "Ticket to Ride",
+        "Scattergories", "Othello", "Chess", "Checkers", "Battleship",
+        "Backgammon", "Go", "Yahtzee", "Jenga", "Risk",
+        "Mancala", "Scattergories", "Pictionary", "Kerplunk", "Snakes and Ladders",
+        "Scrabble", "The Game of Life", "Sequence", "Cranium", "Clue",
+        "Parcheesi", "Mastermind", "Stratego", "Mikado", "Hi Ho! Cherry-o",
+        "Qwirkle", "Boggle", "Hungry Hungry Hippos", "Trouble", "Mouse Trap"]
 
     @classmethod
     def all(cls):
         return [
+            {"name": "Analog Games",    "members": cls.GAMES},
             {"name": "Anime",           "members": cls.ANIME},
             {"name": "Art Materials",   "members": cls.ART_MATERIALS},
             {"name": "Asian Countries", "members": cls.ASIAN_COUNTRIES},
@@ -421,6 +442,7 @@ class Groups:
             {"name": "Rodents",         "members": cls.RODENTS},
             {"name": "American Singers","members": cls.SINGERS},
             {"name": "Sitcoms",         "members": cls.SITCOMS},
+            {"name": "Toys",            "members": cls.TOYS},
             {"name": "Units of Measurement","members": cls.UNITS},
             {"name": "Video Games",     "members": cls.VIDEO_GAMES},
             {"name": "World Capitals",  "members": cls.WORLD_CAPITALS}
