@@ -111,7 +111,7 @@ class Groups:
         ]
 
     VIDEO_GAMES = ["Minecraft", "Dark Souls", "Fear and Hunger", "The Witcher", "Civilization",
-        "Silent Hill", "Super Mario World", "Crash Bandicoot", "Legend of Zelda", "Hades",
+        "Silent Hill", "Super Mario World", "Crash Bandicoot", "Legend of Zelda", "Candy Crush",
         "Tetris", "The Oregon Trail", "Pac-Man", "Guitar Hero", "Grand Theft Auto",
         "Final Fantasy", "Fire Emblem", "Metal Gear Solid", "Deus Ex", "The Sims",
         "Devil May Cry", "Animal Crossing", "Halo", "Call of Duty", "Resident Evil",
@@ -265,7 +265,7 @@ class Groups:
         ]
     
     GODS = ["Odin", "Loki", "Thor", "Freyr", "Idun",
-        "Zeus", "Cupid", "Hades", "Saturn", "Woden",
+        "Zeus", "Cupid", "Pluto", "Saturn", "Woden",
         "Pan", "Ishtar", "Dagon", "Huitzilopochtli", "Anubis",
         "Iris", "Leto", "Apollo", "Xipe Totec", "Quetzalcoatl",
         "Inti", "Pachamama", "Apu", "Marduk", "Enlil",
