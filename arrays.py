@@ -209,7 +209,7 @@ class Groups:
         "Red Dwarf", "The Facts of Life", "Seinfeld", "Family Ties", "Golden Girls"
         ]
     
-    DYNASTIES = ["Han", "Xia", "Ptolomeic", "Stuart", "Habsberg",
+    DYNASTIES = ["Han", "Xia", "Ptolomeic", "Stuart", "Habsburg",
         "Bourbon", "Alaouite", "Julio-Claudian", "Tudor", "Theodosian",
         "Valois", "Flavian", "Ottoman", "Umayyad", "Severan",
         "Ottoman", "Atec", "Mithridatic", "Medici", "Hardrata",
