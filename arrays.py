@@ -345,7 +345,7 @@ class Groups:
         "Republic", "Military junta", "Socialist republic", "Communist state",
         "Parliamentary democracy", "Chiefdom", "Theocracy", "Federation", "Unitary system",
         "Empire", "Confederation", "Presidential democracy", "Participatory democracy", "Feudalism",
-        "Meritocracy", "Gerontocracy", "Tribalism", "Anarchy", "Colony"
+        "Meritocracy", "Gerontocracy", "Tribalism", "Anarchy", "Colony",
         "Anarcho-syndicalism", "Authoritarianism", "Syndicalism", "Matriarchy", "Socialist democracy",
         "Liberal democracy", "Demarchy", "Technocracy", "Corporatocracy", "Stratocracy",
         "Fascism", "Merchant republic", "People's republic", "City-state", "Global state",
