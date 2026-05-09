@@ -341,8 +341,8 @@ class Groups:
          "Pandanggo", "Limbo", "Calypso", "Hula", "Lindy Hop"
          ]
     
-    GOVERNMENTS = ["Constitutional monarchy", "Absolute Monarchy", "Dual monarchy", "Duarchy", "Oligarchy", "Plutocracy",
-        "Republic", "Military junta", "Socialist republic", "Communist state",
+    GOVERNMENTS = ["Constitutional monarchy", "Absolute Monarchy", "Dual monarchy", "Duarchy", "Oligarchy", 
+        "Plutocracy", "Republic", "Military junta", "Socialist republic", "Communist state",
         "Parliamentary democracy", "Chiefdom", "Theocracy", "Federation", "Unitary system",
         "Empire", "Confederation", "Presidential democracy", "Participatory democracy", "Feudalism",
         "Meritocracy", "Gerontocracy", "Tribalism", "Anarchy", "Colony",
@@ -421,7 +421,6 @@ class Groups:
             {"name": "Rodents",         "members": cls.RODENTS},
             {"name": "American Singers","members": cls.SINGERS},
             {"name": "Sitcoms",         "members": cls.SITCOMS},
-            {"name": "Systems of Governement", "members": cls.GOVERNMENTS},
             {"name": "Units of Measurement","members": cls.UNITS},
             {"name": "Video Games",     "members": cls.VIDEO_GAMES},
             {"name": "World Capitals",  "members": cls.WORLD_CAPITALS}
