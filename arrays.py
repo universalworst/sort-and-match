@@ -181,7 +181,7 @@ class Groups:
         "Henri Matisse", "Hilma af Klint", "Jackson Polluck", "Jan Van Eyck", "Jean-Michel Basquiat",
         "Johannes Vermeer", "Leonardo da Vinci", "Max Ernst", "Michelangelo", "Pablo Picasso",
         "Paul Cezanne", "Paul Gauguin", "Peter Paul Rubens", "Rachel Ruysch", "Raphael",
-        "Rembrandt", "Salador Dali", "Sandro Botticelli", "Vincent van Gogh", "Wassily Kandinsky",
+        "Rembrandt", "Salvador Dali", "Sandro Botticelli", "Vincent van Gogh", "Wassily Kandinsky",
         "Edouard Manet", "El Greco", "Edvard Munch", "Joan Miro", "Rene Magritte",
         "Qi Baishi", "Guo Xi", "Raja Ravi Varma", "Katsushika Hokusai", "Phidias",
         "Ivan Aivazovsky", "Jan Matejko", "Piet Mondrian", "Gustave Courbet", "Eugene Delacroix"
