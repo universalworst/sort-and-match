@@ -81,7 +81,7 @@ class Groups:
         "Rice cooker", "Tablet", "Vacuum cleaner", "Television", "Copy machine",
         "Printer", "Air purifier", "Blender", "Headphones", "Camcorder",
         "VCR", "DVD player", "Curling iron", "Hair dryer", "External hard drive",
-        "Floor lamp", "Fan", "Flashlight", "WiFi modem", "Walkie Talkie",
+        "Floor lamp", "Ceiling fan", "Flashlight", "WiFi modem", "Walkie Talkie",
         "Radio", "Scanner", "Remote control", "Boombox", "Air fryer",
         "Alarm clock", "3D printer", "Webcam", "Projector", "Bluetooth Speaker",
         "Coffee maker", "Power drill", "Microphone", "Air conditioner", "Projector",
@@ -354,8 +354,8 @@ class Groups:
     IDEOLOGIES = ["Nihilism", "Pacifism", "Liberalism", "Conservatism", "Marxism",
         "Materialism", "Idealism", "Rationalism", "Romanticism", "Humanism",
         "Racism", "Environmentalism", "Social darwinism", "Globalism", "Protectionism",
-        "Individualism", "Feminism", "Multiculturalism", "Caitalism", "Nationalism",
-        "Collectivism", "Consumerism", "Secularism"
+        "Individualism", "Feminism", "Multiculturalism", "Capitalism", "Nationalism",
+        "Collectivism", "Consumerism", "Secularism", "Futurism", "Jingoism"
         ]
     
     ANIMAL_SOUNDS = ["Bow wow", "Meow", "Nyan", "Woof", "Yip",
@@ -406,6 +406,26 @@ class Groups:
         "Scrabble", "The Game of Life", "Sequence", "Cranium", "Clue",
         "Parcheesi", "Mastermind", "Stratego", "Mikado", "Hi Ho! Cherry-o",
         "Qwirkle", "Boggle", "Hungry Hungry Hippos", "Trouble", "Mouse Trap"]
+    
+    WEBSITES = ["Google", "X", "Reddit", "Instagram", "Facebook", 
+        "Quora", "IMDB", "Yelp!", "Pinterest", "ChatGPT",
+        "Twitch", "Wikipedia", "Pornhub", "Amazon.com", "LinkedIn",
+        "Blogspot", "Wordpress", "Mediafire", "MySpace", "imgur",
+        "Vimeo", "Dailymotion", "WebMD", "MSN", "Fandom.com",
+        "WikiHow", "GoFundMe", "Change.org", "LiveJournal", "BandCamp",
+        "SoundCloud", "Spotify", "Canva", "tinyurl", "GoDaddy",
+        "Blogger", "RateMyProfessor", "Bing", "Discord", "TicketMaster",
+        "BuzzFeed", "Telegram.me", "Skype", "AOL", "Shopify"]
+    
+    NURSERY_RHYMES = ["Hickory Dickory Dock", "Baa, Baa, Black Sheep", "Mary Had a Little Lamb", "Georgie Porgie", "Little Jack Horner",
+        "Jack Sprat", "Peter Peter Pumpkin Eater", "Humpty Dumpty", "Itsy Bitsy Spider", "Twinkle, Twinkle Little Star",
+        "Jack and Jill", "Pat-a-cake", "Do Your Ears Hang Low?", "Down By the Bay", "Hot Cross Buns",
+        "Pop Goes the Weasel", "Ring Around the Rosie", "London Bridge is Falling Down", "Little Boy Blue", "Old King Cole",
+        "Old MacDonald Had a Farm", "Row, Row, Row Your Boat", "Sing a Song of Sixpence", "Simple Simon", "She'll Be Coming Round the Mountain",
+        "The Farmer and the Dell", "Three Blind Mice", "This Old Man", "Michael Finnegan", "Ladybug, Ladybug",
+        "Wee Willie Winkie", "Hey Diddle Diddle", "Polly Put the Kettle On", "My Bonnie Went Over the Ocean", "Little Bo-Peep",
+        "This Little Piggy", "The Muffin Man", "Rock-a-Bye Baby", "Five Little Monkeys", "This Old Man",
+        "The Noble Duke of York", "Did You Ever See a Lassie?", "Rub-a-dub-dub", "Old Mother Hubbard", "Mary, Mary, Quite Contrary"]
 
     @classmethod
     def all(cls):
@@ -417,7 +437,7 @@ class Groups:
             {"name": "Dances",          "members": cls.DANCES},
             {"name": "Disney Movies",   "members": cls.DISNEY},
             {"name": "Children's Books","members": cls.CHILDRENS_BOOKS},
-            {"name": "Crayon Colors",   "members": cls.COLORS},
+            {"name": "Crayola Colors",   "members": cls.COLORS},
             {"name": "Crops",           "members": cls.CROPS},
             {"name": "Electronics",     "members": cls.ELECTRONICS},
             {"name": "Fantasy Creatures","members": cls.FANTASY_CREATURES},
@@ -430,9 +450,10 @@ class Groups:
             {"name": "Languages",       "members": cls.LANGUAGES},
             {"name": "Latin Roots",     "members": cls.LATIN_ROOTS},
             {"name": "Melee Weapons",   "members": cls.MELEE_WEAPONS},
-            {"name": "Mentor Characters", "members": cls.MENTORS},
+            {"name": "Fictional Mentors", "members": cls.MENTORS},
             {"name": "Metals",          "members": cls.METALS},
             {"name": "Modes of Transportation","members": cls.TRANSPORTATION},
+            {"name": "Nursery Rhymes",  "members": cls.NURSERY_RHYMES},
             {"name": "Painters",        "members": cls.PAINTERS},
             {"name": "Philosophers",    "members": cls.PHILOSOPHERS},
             {"name": "Primates",        "members": cls.PRIMATES},
@@ -445,6 +466,7 @@ class Groups:
             {"name": "Toys",            "members": cls.TOYS},
             {"name": "Units of Measurement","members": cls.UNITS},
             {"name": "Video Games",     "members": cls.VIDEO_GAMES},
+            {"name": "Popular Websites", "members": cls.WEBSITES},
             {"name": "World Capitals",  "members": cls.WORLD_CAPITALS}
         ]
 
