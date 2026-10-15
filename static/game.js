@@ -12,10 +12,51 @@ let tiles = [];
 let selectedIndex = null;
 let firstMergeHappened = false;
 
+// ── Save / Load ─────────────────────────────────────────────────────
+const SAVE_KEY = "matchingGameSave";
+
+function saveGame() {
+  const saveData = {
+    groups: groups,
+    tiles: tiles,
+    firstMergeHappened: firstMergeHappened
+  };
+  localStorage.setItem(SAVE_KEY, JSON.stringify(saveData));
+}
+
+// Returns true if a save was found and loaded, false otherwise
+function loadGame() {
+  const saved = localStorage.getItem(SAVE_KEY);
+  if (!saved) return false;
+
+  try {
+    const data = JSON.parse(saved);
+    groups = data.groups;
+    tiles = data.tiles;
+    firstMergeHappened = data.firstMergeHappened;
+    return true;
+  } catch (err) {
+    // If the save is broken, ignore it and start fresh
+    console.warn("Save was unreadable. Starting a new game.", err.message);
+    localStorage.removeItem(SAVE_KEY);
+    return false;
+  }
+}
+
 // ── Boot ────────────────────────────────────────────────────────────
 // Runs once when the page loads.
 document.addEventListener("DOMContentLoaded", () => {
-  newGame();
+  if (loadGame()) {
+    render();
+    if (tiles.every(t => t.done)) {
+      setStatus("All groups complete — well done!", "good");
+      showWinBanner();
+    } else {
+      setStatus("Welcome back! Your progress was restored.", "");
+    }
+  } else {
+    newGame();
+  }
 });
 
 // ── New game ────────────────────────────────────────────────────────
@@ -39,6 +80,7 @@ async function newGame() {
 
   buildTiles();
   render();
+  saveGame();
   setStatus("Pick any button to start.", "");
 }
 
@@ -153,6 +195,7 @@ function handleCorrectMatch(firstIdx, secondIdx) {
   selectedIndex = null;
 
   render();
+  saveGame();
 
   // Animate the new front tile
   const allTileEls = document.querySelectorAll(".tile");

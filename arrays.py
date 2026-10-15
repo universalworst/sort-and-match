@@ -409,7 +409,7 @@ class Groups:
     
     WEBSITES = ["Google", "X", "Reddit", "Instagram", "Facebook", 
         "Quora", "IMDB", "Yelp!", "Pinterest", "ChatGPT",
-        "Twitch", "Wikipedia", "Pornhub", "Amazon.com", "LinkedIn",
+        "Twitch", "Wikipedia", "Pornhub", "SquareSpace", "LinkedIn",
         "Blogspot", "Wordpress", "Mediafire", "MySpace", "imgur",
         "Vimeo", "Dailymotion", "WebMD", "MSN", "Fandom.com",
         "WikiHow", "GoFundMe", "Change.org", "LiveJournal", "BandCamp",
@@ -426,6 +426,8 @@ class Groups:
         "Wee Willie Winkie", "Hey Diddle Diddle", "Polly Put the Kettle On", "My Bonnie Went Over the Ocean", "Little Bo-Peep",
         "This Little Piggy", "The Muffin Man", "Rock-a-Bye Baby", "Five Little Monkeys", "This Old Man",
         "The Noble Duke of York", "Did You Ever See a Lassie?", "Rub-a-dub-dub", "Old Mother Hubbard", "Mary, Mary, Quite Contrary"]
+
+    
 
     @classmethod
     def all(cls):
