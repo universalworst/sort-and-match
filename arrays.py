@@ -427,6 +427,15 @@ class Groups:
         "This Little Piggy", "The Muffin Man", "Rock-a-Bye Baby", "Five Little Monkeys", "This Old Man",
         "The Noble Duke of York", "Did You Ever See a Lassie?", "Rub-a-dub-dub", "Old Mother Hubbard", "Mary, Mary, Quite Contrary"]
 
+    CURRENCY = ["Dollar", "Lira", "Franc", "Ruble", "Yen",
+        "Won", "Peso", "Euro", "Dinar", "Shekel",
+        "Krona", "Pound sterling", "Lev", "Florin", "Guilder",
+        "Rial", "As", "Talent", "Shilling", "Rupee",
+        "Yuan", "Rand", "Kip", "Baht", "Dong",
+        "Denarius", "Daric", "Litra", "Escudo", "Real",
+        "Mark", "Drachma", "Tolar", "Kroon", "Markka",
+        "Koruna", "Peseta", "Groat", "Leu", "Zloty",
+        "Stater", "Rouble", "Reichsmark", "Livre", "Prutah"]
     
 
     @classmethod
@@ -436,6 +445,7 @@ class Groups:
             {"name": "Anime",           "members": cls.ANIME},
             {"name": "Art Materials",   "members": cls.ART_MATERIALS},
             {"name": "Asian Countries", "members": cls.ASIAN_COUNTRIES},
+            {"name": "Currencies",      "members": cls.CURRENCIES},
             {"name": "Dances",          "members": cls.DANCES},
             {"name": "Disney Movies",   "members": cls.DISNEY},
             {"name": "Children's Books","members": cls.CHILDRENS_BOOKS},
