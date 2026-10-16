@@ -451,6 +451,7 @@ class Groups:
             {"name": "Children's Books","members": cls.CHILDRENS_BOOKS},
             {"name": "Crayola Colors",   "members": cls.COLORS},
             {"name": "Crops",           "members": cls.CROPS},
+            {"name": "Currencies",      "members": cls.CURRENCY},
             {"name": "Electronics",     "members": cls.ELECTRONICS},
             {"name": "Fantasy Creatures","members": cls.FANTASY_CREATURES},
             {"name": "Fish",            "members": cls.FISH},
