@@ -81,11 +81,11 @@ class Groups:
         "Rice cooker", "Tablet", "Vacuum cleaner", "Television", "Copy machine",
         "Printer", "Air purifier", "Blender", "Headphones", "Camcorder",
         "VCR", "DVD player", "Curling iron", "Hair dryer", "External hard drive",
-        "Floor lamp", "Ceiling fan", "Flashlight", "WiFi modem", "Walkie Talkie",
+        "Floor lamp", "Gameboy", "Flashlight", "WiFi modem", "Walkie Talkie",
         "Radio", "Scanner", "Remote control", "Boombox", "Air fryer",
         "Alarm clock", "3D printer", "Webcam", "Projector", "Bluetooth Speaker",
         "Coffee maker", "Power drill", "Microphone", "Air conditioner", "Projector",
-        "Radiator", "Sewing machine", "USB drive", "Digital watch", "Digital camera"
+        "Radiator", "PlayStation", "USB drive", "Digital watch", "Digital camera"
         ]
     
     FISH = ["Clownfish", "Bluegill", "Lingcod", "Cod", "Sturgeon",
@@ -151,7 +151,7 @@ class Groups:
         "Solder", "Stainless steel", "Sterling silver", "Amalgam", "Antimony",
         "Babbitt", "Bismuth", "Thallium", "Scandium", "Yttrium",
         "Nickel hydride", "Cerrobend", "Guanin", "Ormolu", "Ferrochrome",
-        "Elektron", "Alumel", "Terne", "Vitallium", "Glucydur"
+        "Electrum", "Alumel", "Terne", "Vitallium", "Glucydur"
         ]
 
     FANTASY_CREATURES = ["Orc", "Troll", "Ogre", "Chimera", "Sphinx",
@@ -355,7 +355,8 @@ class Groups:
         "Materialism", "Idealism", "Rationalism", "Romanticism", "Humanism",
         "Racism", "Environmentalism", "Social darwinism", "Globalism", "Protectionism",
         "Individualism", "Feminism", "Multiculturalism", "Capitalism", "Nationalism",
-        "Collectivism", "Consumerism", "Secularism", "Futurism", "Jingoism"
+        "Collectivism", "Consumerism", "Secularism", "Futurism", "Jingoism",
+        "EXCLUDED"
         ]
     
     ANIMAL_SOUNDS = ["Bow wow", "Meow", "Nyan", "Woof", "Yip",
@@ -363,7 +364,8 @@ class Groups:
         "Neigh", "Hee-haw", "Eeyore", "Cluck", "Cockadoodle-doo",
         "Gobble", "Baa", "Hoot", "Honk", "Oo-oo ee-ee ah-ah",
         "Roar", "Hiss", "Moo", "Ribbit", "Croak",
-        "Poo-tee-weet", "Yiff", "Howl", "Crow", "Chirp"]
+        "Poo-tee-weet", "Yiff", "Howl", "Crow", "Chirp",
+        "EXCLUDED"]
     
     ASIAN_COUNTRIES = ["China", "Japan", "Saudi Arabia", "Jordan", "Oman",
         "Sri Lanka", "Cambodia", "Thailand", "Brunei", "Singapore",
@@ -436,6 +438,16 @@ class Groups:
         "Mark", "Drachma", "Tolar", "Kroon", "Markka",
         "Koruna", "Peseta", "Groat", "Leu", "Zloty",
         "Stater", "Rouble", "Reichsmark", "Livre", "Prutah"]
+
+    VILLAINS = ["Cruella de Vil", "Jafar", "Mr. Potter", "HAL", "Ursula",
+        "Ryomen Sukuna", "Frieza", "Evil Stepmother", "Darth Vader", "Voldemort",
+        "Sauron", "Nurse Ratched", "Count Dracula", "Wicked Witch of the West", "Thanos",
+        "The Joker", "Lex Luthor", "Jason Voorhees", "Michael Myers", "Lady Macbeth",
+        "Pennywise", "President Snow", "Joffrey Lannister", "Freddie Kreuger", "Freddie Fazbear",
+        "Javert", "Long John Silver", "Miss Trunchbull", "Cat Woman", "Madara Uchiha",
+        "Hannibal Lecter", "Norman Bates", "Saruman", "Iago", "Uriah Heep",
+        "James Moriarty", "Big Brother", "Anton Chigurh", "Magneto", "Bane",
+        "Scar", "Hans Gruber", "Verbal Kint", "Jack Torrence", "Alex DeLarge"]
     
 
     @classmethod
@@ -479,6 +491,7 @@ class Groups:
             {"name": "Toys",            "members": cls.TOYS},
             {"name": "Units of Measurement","members": cls.UNITS},
             {"name": "Video Games",     "members": cls.VIDEO_GAMES},
+            {"name": "Fictional Villains","members": cls.VILLAINS},
             {"name": "Popular Websites", "members": cls.WEBSITES},
             {"name": "World Capitals",  "members": cls.WORLD_CAPITALS}
         ]
