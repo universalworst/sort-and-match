@@ -457,7 +457,6 @@ class Groups:
             {"name": "Anime",           "members": cls.ANIME},
             {"name": "Art Materials",   "members": cls.ART_MATERIALS},
             {"name": "Asian Countries", "members": cls.ASIAN_COUNTRIES},
-            {"name": "Currencies",      "members": cls.CURRENCIES},
             {"name": "Dances",          "members": cls.DANCES},
             {"name": "Disney Movies",   "members": cls.DISNEY},
             {"name": "Children's Books","members": cls.CHILDRENS_BOOKS},
